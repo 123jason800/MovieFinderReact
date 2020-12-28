@@ -1,17 +1,18 @@
 const SearchDisplay = (props) => {
     let {searchData,error} = props;
+    console.log(searchData);
     if (!error) {
         searchData = searchData.map(movie => (
-            <div key={movie.imdbID} className="col-3  my-3">
+            <a  href={`https://www.imdb.com/title/${movie.imdbID}/`} key={movie.imdbID} className="col-3  my-3">
                 <div className="card h-100 px-3 shadow">
                     <img className="card-img-top " src={movie.Poster} alt="Card image cap" />
                     <div className="card-body">
-                        <h5 className="card-title">{movie.Title}</h5>
-                        <p className="card-text"><i>{movie.Type}</i></p>
+                        <a className="card-title text-decoration-none" target="_blank">{movie.Title}`</a>
+                        <p className="card-text text-decoration-none"><i>{movie.Type}</i></p>
                         <p>{movie.Year}</p>
                     </div>
                 </div>
-            </div>
+            </a>
         ));
     }
 

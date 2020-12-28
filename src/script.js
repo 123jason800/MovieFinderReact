@@ -23,7 +23,6 @@ class MovieFinder extends React.Component {
         event.preventDefault();
         const {searchInput,submitInput} = this.state;
         if (searchInput !== submitInput) {
-            console.log('ok');
             this.getMovies(searchInput);
         }
         

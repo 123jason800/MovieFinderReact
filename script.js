@@ -44,7 +44,6 @@ var MovieFinder = function (_React$Component) {
                 submitInput = _state.submitInput;
 
             if (searchInput !== submitInput) {
-                console.log('ok');
                 this.getMovies(searchInput);
             }
         }
