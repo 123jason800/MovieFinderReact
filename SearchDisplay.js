@@ -14,16 +14,16 @@ var SearchDisplay = function SearchDisplay(props) {
                     React.createElement("img", { className: "card-img-top ", src: movie.Poster, alt: "Card image cap" }),
                     React.createElement(
                         "div",
-                        { className: "card-body" },
+                        { className: "card-body text-center" },
                         React.createElement(
-                            "a",
-                            { className: "card-title text-decoration-none", target: "_blank" },
+                            "p",
+                            { className: "card-title ", target: "_blank" },
                             movie.Title,
                             "`"
                         ),
                         React.createElement(
                             "p",
-                            { className: "card-text text-decoration-none" },
+                            { className: "card-text" },
                             React.createElement(
                                 "i",
                                 null,
@@ -32,7 +32,7 @@ var SearchDisplay = function SearchDisplay(props) {
                         ),
                         React.createElement(
                             "p",
-                            null,
+                            { className: "card-date" },
                             movie.Year
                         )
                     )

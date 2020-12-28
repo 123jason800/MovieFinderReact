@@ -3,3 +3,13 @@
     height: 15vw;
     object-fit: cover;
 }
+
+a {
+    text-decoration: none;
+}
+
+
+.card-text,
+.card-date {
+    color: #000;
+}
