@@ -18,8 +18,7 @@ var SearchDisplay = function SearchDisplay(props) {
                         React.createElement(
                             "p",
                             { className: "card-title ", target: "_blank" },
-                            movie.Title,
-                            "`"
+                            movie.Title
                         ),
                         React.createElement(
                             "p",

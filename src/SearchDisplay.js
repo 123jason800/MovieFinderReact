@@ -7,7 +7,7 @@ const SearchDisplay = (props) => {
                 <div className="card h-100 px-3 shadow">
                     <img className="card-img-top " src={movie.Poster} alt="Card image cap" />
                     <div className="card-body text-center">
-                        <p className="card-title " target="_blank">{movie.Title}`</p>
+                        <p className="card-title " target="_blank">{movie.Title}</p>
                         <p className="card-text"><i>{movie.Type}</i></p>
                         <p className="card-date">{movie.Year}</p>
                     </div>
